@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!qkx*8f@pk0ec=6-*5847$ew7bj6_o+a4n*2ajsh4=e#nuxsi!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'student.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
@@ -91,7 +91,7 @@ DATABASES={
             'host':'mongodb+srv://siva:siva2204@mongo-project.gyhexqc.mongodb.net/?retryWrites=true&w=majority'
         }
     }
-}
+}"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
