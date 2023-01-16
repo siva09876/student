@@ -4,12 +4,7 @@ from . import models
 
 # Create your views here.
 def add(request):
-    if request.POST:
-        name=request.POST['name']
-        roll_no=int(request.POST['roll_no'])
-        models.student.objects.create(name=name,roll_no=roll_no)
-        return redirect(reverse('list'))
-    else:
+    
         return render(request,'registration/add.html')
 
 
